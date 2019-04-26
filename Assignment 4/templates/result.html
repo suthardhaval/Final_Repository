@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+   <head>
+      <title>Result</title>
+   <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='mystyle.css') }}">   
+   </head>
+   <body>	
+   	<div class="container">
+   		<div class="row">
+  		  <div class="col-12 col-s-12">
+  
+            <h1> Song Mood: </h1>
+            {% if result == 'HAPPY'%}
+            <h1> Happy </h1>
+            <p>
+            	<img src="{{ url_for('static',filename='happy.gif') }}" alt="Happy" >
+            </p>
+            {% elif result == 'SAD'%}	
+            <h1> Sad </h1>
+            <p>
+            	<img src="{{ url_for('static',filename='sad.gif') }}" alt="Sad">
+            </p>
+            {% else %}
+            <h1> Neutral </h1>
+            <p>  
+            	<img src="{{ url_for('static',filename='neutral.gif') }}" alt="Neutral">
+            </p>
+            {% endif %}
+          </div>
+        </div>  
+    </div>
+   </body>
+</html>
