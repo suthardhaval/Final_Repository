@@ -10,8 +10,9 @@ Competitive programming is a mind sport usually held over the Internet or a loca
 
 
 Docker - https://hub.docker.com/r/suthardhaval24/ds_finalproject
-Heroku -
-Report - Report - https://hub.docker.com/r/suthardhaval24/ds_finalproject
+
+
+Report - https://docs.google.com/document/d/1MUTc0XTQw03Ya2Lo4dt1bQ1JekwM6e6L0xdzx3mKv6w/edit#
 
 Steps to run application-
 
