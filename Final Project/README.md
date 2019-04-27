@@ -9,5 +9,20 @@ Competitive programming is a mind sport usually held over the Internet or a loca
 2. Recommending the questions that a programmer should solve given his/her current expertise is a big challenge for Online Programming Platforms but is an essential task to judge a programmer’s expertise in that particular area which will help companies in their hiring process.
 
 
-<h4>Project Proposal :</h4> https://docs.google.com/document/d/1MUTc0XTQw03Ya2Lo4dt1bQ1JekwM6e6L0xdzx3mKv6w/edit#heading=h.5x0d5h95i329
+Docker - https://hub.docker.com/r/suthardhaval24/ds_finalproject
+Heroku -
+Report - Report - https://hub.docker.com/r/suthardhaval24/ds_finalproject
+
+Steps to run application-
+
+On landing we need to enter user id- using this id and based on user profile model will recommend what questions user should solve.
+On entering user id and difficulty level of question model will predict the number of attempts needed.
+
+Technologies Used -
+
+Language: Python, Html, css, javascript
+Web Framework: Flask
+Container: Docker
+Web Platform: Heroku
+
 
