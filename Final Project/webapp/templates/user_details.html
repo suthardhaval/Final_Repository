@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>User Detailss</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/open-iconic-bootstrap.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<!--===============================================================================================-->
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="home">Recommendation Engine</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="home" class="nav-link"><span>Home</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	</nav>
+	<div class="bg-contact2" style="background-image: url('static/images/bg-01.jpg');">
+		<div class="container-contact2">
+			<div class="wrap-contact2">
+				<form class="contact2-form validate-form" action="/user_details" method="post">
+					<span class="contact2-form-title">
+						Please Enter Details
+					</span>
+
+					<div class="wrap-input2 validate-input" data-validate="id is required">
+						<input class="input2" type="text" name="id" required=true>
+						<span class="focus-input2" data-placeholder="User ID"></span>
+					</div>
+
+					<div class="container-contact2-form-btn">
+						<div class="wrap-contact2-form-btn">
+							<div class="contact2-form-bgbtn"></div>
+							<button class="contact2-form-btn">
+								Get Questions
+							</button>
+						</div>
+					</div>
+				</form>
+
+				<form class="contact2-form validate-form" action="/user_attempts" method="post">
+					<div >
+						
+					</div>
+
+					<div class="wrap-input2 validate-input" data-validate="id is required">
+						<input class="input2" type="text" name="id" required=true>
+						<span class="focus-input2" data-placeholder="User ID"></span>
+					</div>
+					
+					<div class="wrap-input2 validate-input" data-validate="level is required">
+						<input class="input2" type="text" name="level" required=true>
+						<span class="focus-input2" data-placeholder="Difficulty Level (A,B,C,D,E,F,G,H)"></span>
+					</div>
+
+					<div class="container-contact2-form-btn">
+						<div class="wrap-contact2-form-btn">
+							<div class="contact2-form-bgbtn"></div>
+							<button class="contact2-form-btn">
+								Number of Attempts
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript">
+	    function validateForm()
+	    {
+	        var a=document.forms["Form"]["answer_a"].value;
+	        var b=document.forms["Form"]["answer_b"].value;
+	        var c=document.forms["Form"]["answer_c"].value;
+	        var d=document.forms["Form"]["answer_d"].value;
+	        if (a==null || a=="",b==null || b=="",c==null || c=="",d==null || d=="")
+	        {
+	            alert("Please Fill All Required Field");
+	            return false;
+	        }
+	    }
+	</script>
+
+
+<!--===============================================================================================-->
+  <script type="text/javascript" src="static/js/jquery.min.js"></script>
+<!--===============================================================================================-->
+  <script type="text/javascript" src="static/js/popper.min.js"></script>
+  <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="static/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+  <script type="text/javascript" src="static/js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+
+</body>
+</html>
